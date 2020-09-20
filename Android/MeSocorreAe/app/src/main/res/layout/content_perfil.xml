@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PerfilActivity"
+    tools:showIn="@layout/activity_perfil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/campo_customizado"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivPerfilFoto"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="5dp"
+                android:src="@drawable/semfoto" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvPerfilNome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="João da Silva"
+                    android:textColor="#000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tvPerfilNota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5,0"
+                    android:textColor="#EEB50D"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/campo_customizado"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descrição" />
+
+            <TextView
+                android:id="@+id/tvPerfilDescricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/campo_customizado"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elogios" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPerfilElogios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/tvPerfilSemLista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="15dp"
+                android:text="Que pena, esse autonomo ainda não foi elogiado, seja o primeiro e deixe tudo mais bonito por aqui!"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

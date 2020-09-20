@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ListaAutonomosActivity"
+    tools:showIn="@layout/activity_lista_autonomos"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvListaAutonomosListaAutonomos"
+        android:scrollbars="vertical">
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvListaAutonomoSemLista"
+        android:text="É uma pena, ainda não temos nenhum autônomo dessa categoria! Tenha um bom dia :D"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:paddingTop="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

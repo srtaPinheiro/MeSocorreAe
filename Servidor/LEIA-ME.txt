@@ -1,0 +1,1 @@
+Pasta destinada aos arquivos do projeto desktop do servidor do software.
